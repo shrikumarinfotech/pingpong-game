@@ -1,0 +1,77 @@
+/**
+ * Name: PingPong Game
+ * Description: Ping Pong game buit in JavaScript
+ * Author: Shrikumar Infotech
+ * License: GPLv2.0 or later
+ * License Url: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ */
+
+html{
+    font-size: 62.5%;
+    word-break: break-all;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    background-color: #ffffff;
+}
+
+/**
+* Ping Pong Game Modules
+*/
+
+#ping-pong-game-wrapper{
+    position: relative;
+    width: 640px;
+    height: 480px;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+#ping-pong-canvas{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.plate{
+    position: absolute;
+    width: 65px;
+    height: 10px;
+    background-color: #000000;
+}
+
+#plate-ai{
+    top: 0;
+    left: calc(50% - (65px / 2));
+}
+
+#plate-user{
+    bottom: 0;
+    left: calc(50% - (65px / 2));
+}
+
+.ball{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    background-color: #000000;
+}
+
+#ping-pong-ball{
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: translate(50%, 50%);
+}
