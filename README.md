@@ -1,2 +1,2 @@
 # PingPong Game
-Coming soon...
+Work in progress
